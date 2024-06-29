@@ -102,8 +102,13 @@ class HyperOptManager:
             for i, batch in enumerate(epoch_progress):
                 torch.set_default_device(self.device)
 
+                if i == 0 and epoch == 0:
+                    knowledge_layers = range(-2,-1)
+                else:
+                    knowledge_layers = range(0,3)
+
                 batch_outputs = torch.stack(
-                    [model(left, target, right, hops) for (left, target, right), _, hops in batch], dim=0)
+                    [model(sentence, target_index_start, target_index_end, knowledge_layers) for (sentence, target_index_start, target_index_end), _, hops in batch], dim=0)
                 batch_labels = torch.tensor([label.item() for _, label, _ in batch])
 
                 loss: torch.Tensor = criterion(batch_outputs, batch_labels)
