@@ -57,7 +57,7 @@ class HyperOptManager:
             hp.quniform('dropout_rate', 0.25, 0.75, 0.1),
             hp.choice('momentum', [0.85, 0.9, 0.95, 0.99]),
             hp.choice('weight_decay', [0.00001, 0.0001, 0.001, 0.01, 0.1]),
-            hp.choice('lcr_hops', [2, 3, 4, 8])
+            hp.choice('lcr_hops', [3])
         ]
 
         best = fmin(self.objective, space=space, algo=tpe.suggest, trials=self.trials, show_progressbar=False)
