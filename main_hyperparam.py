@@ -139,9 +139,9 @@ class HyperOptManager:
                 torch.set_default_device(self.device)
 
                 with torch.no_grad():
-                    (left, target, right), label, hops = data[0]
+                   (sentence, target_index_start, target_index_end), label, hops = data[0]
 
-                    output: torch.Tensor = model(left, target, right, hops)
+                    output: torch.Tensor = model(sentence, target_index_start, target_index_end, knowledge_layers = range(-2,-1))
                     val_n_correct += (output.argmax(0) == label).type(torch.int).item()
                     val_n += 1
 
