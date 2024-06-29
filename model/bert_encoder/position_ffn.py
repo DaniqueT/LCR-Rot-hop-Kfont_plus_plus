@@ -1,4 +1,3 @@
-# https://github.com/autoliuweijie/K-BERT
 import torch.nn as nn
 from rdflib import URIRef, Graph
 import torch
