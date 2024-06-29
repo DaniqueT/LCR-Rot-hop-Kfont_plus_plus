@@ -30,10 +30,9 @@ Source code for injecting knowledge from a domain-specific ontology into LCR-Rot
 The following files can be used to obtain the results:
 
 - `main_preprocess.py`: removes opinions that contain implicit targets and generates the sentences into the correct format for the BERT model to use. To generate all embeddings for a given year, run `python main_preprocess.py --all`
-- `main_hyperparam.py`: This runs the hyperparameter tuning, you can change the year, the ontology path in the FFN layer and knowledge injection layers for both the training and validating step. 
-- `main_train.py`: train the model for a given set of hyperparameters, again change the year, the ontology path in the FFN layer and choose the desired knowledge injection layers for both training and validating. 
-- `main_validate.py`: validate a trained model. Again, choose which layers, knowledge should be injected. You can specify your model path by running
-  python `main_validate.py --model "Model path"` in the terminal. 
+- `main_hyperparam.py`: This runs the hyperparameter tuning. Change the year, the ontology path in the FFN layer and knowledge injection layers for both the training and validating step. 
+- `main_train.py`: train the model for a given set of hyperparameters. Again change the year, the ontology path in the FFN layer and choose the desired knowledge injection layers for both training and validating. 
+- `main_validate.py`: validate a trained model. Choose which if and for which transformer layers knowledge should be injected. You can specify your model path by running python `main_validate.py --model "Model path"` in the terminal. 
 
 ## Acknowledgements
 
