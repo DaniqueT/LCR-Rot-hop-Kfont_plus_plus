@@ -98,12 +98,6 @@ def generate_embeddings(data: ElementTree, embeddings_dir: str):
 
         print(f"Saved opinions for {i} opinions")
 
-
-#def load_ontology():
-  #  path = "/Users/danique/Library/Mobile Documents/com~apple~CloudDocs/Erasmus University Rotterdam/Year 4/Thesis/My thesis/LCR-Rot-hop++_Kformer/LCR+Kformer/data/raw/ontology.owl"
-   # return Graph().parse(path)
-
-
 def main():
     # parse CLI args
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
@@ -137,17 +131,6 @@ def main():
 
         if phase == 'Train' or phase == 'Test':
            continue
-
-        # inject knowledge for test datasets
-       # for ont_hops in range(3):
-        #    for use_vm in [True, False]:
-          #      for use_soft_pos in [True, False]:
-             #       embeddings_layer = EmbeddingsLayer(hops=ont_hops, ontology=ontology, use_vm=use_vm,
-               #                                        use_soft_pos=use_soft_pos, device=device)
-               #     embeddings_dir = EmbeddingsDataset(year=year, device=device, phase=phase, ont_hops=ont_hops,
-                  #                                     empty_ok=True, use_vm=use_vm, use_soft_pos=use_soft_pos).dir
-                  #  generate_embeddings(embeddings_layer, data, embeddings_dir)
-
 
 if __name__ == "__main__":
     main()
