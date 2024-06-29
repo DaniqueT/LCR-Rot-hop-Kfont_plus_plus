@@ -41,6 +41,7 @@ Code and ideas are used from:
 - https://github.com/StijnCoremans/LCR-Rot-hop-ont.git
 - https://github.com/Bjarten/early-stopping-pytorch/blob/master/pytorchtools.py
 - https://github.com/KRR-Oxford/OWL2Vec-Star.git
+- https://github.com/autoliuweijie/K-BERT.git
 - Trusca, M. M., Wassenberg, D., Frasincar, F., and Dekker, R. (2020). A hybrid approach
   for aspect-based sentiment analysis using deep contextual word embeddings and hierarchical
   attention. In 20th Conference on Web Engineering (ICWE 2020), volume 12128 of LNCS, pages 365–380. Springer.
