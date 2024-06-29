@@ -18,7 +18,7 @@ class PositionwiseFeedForward(nn.Module):
         self.currentLayerIndex = currentLayerIndex
         self.layer_norm = nn.LayerNorm(hidden_size, eps=1e-12)
 
-        if self.currentLayerIndex in range(0,3):
+        if self.currentLayerIndex in range(9,12):
             ontology_path = "data/raw/ontology.owl"
             self.ontology = Graph().parse(ontology_path)
             self.synonym_vectors = {}
