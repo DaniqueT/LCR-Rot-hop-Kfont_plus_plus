@@ -6,6 +6,7 @@ Source code for injecting knowledge from a domain-specific ontology into LCR-Rot
 - Create environment
    - Create a conda environment in Python 3.10
    - Install the required packages by running pip install -r requirements.txt in the terminal
+
  
 - Download data
   - Download the following files
@@ -17,17 +18,19 @@ Source code for injecting knowledge from a domain-specific ontology into LCR-Rot
     - `ABSA15_Restaurants_Train.xml`
     - `ABSA16_Restaurants_Test.xml`
     - `ABSA16_Restaurants_Train.xml`
-    - `ontology.owl'
+    - `ontology.owl`
+   
+- Use OWL2Vec to create vectors of the ontology
+   - Follow the Readme file of [Owl2Vec*](https://github.com/KRR-Oxford/OWL2Vec-Star.git)
+   - For this work, the hermit reasoner was used and an embedding size of 100
+   - Save the OWL2Vec ontology to 'data/raw'
 
 
 ## Usage
+The following files can be used to obtain the results:
 
-To view the available cli args for a program, run `python [FILE] --help`. These CLI args can for example be used to pick
-the year of the dataset.
-
-- `main_preprocess.py`: remove opinions that contain implicit targets and generate embeddings, these embeddings are used
-  by the other programs. To generate all embeddings for a given year, run `python main_preprocess.py --all`
-- `main_hyperparam.py`: run hyperparameter optimization
+- `main_preprocess.py`: removes opinions that contain implicit targets and generates the sentences into the correct format for the BERT model to use. To generate all embeddings for a given year, run `python main_preprocess.py --all`
+- `main_hyperparam.py`: This runs the hyperparameter tuning, you can change the year, the ontology path and knowledge layers 
 - `main_train.py`: train the model for a given set of hyperparameters
 - `main_validate.py`: validate a trained model.
   python main_validate.py --model "Model path"
