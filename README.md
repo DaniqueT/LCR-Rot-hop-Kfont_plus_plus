@@ -1,4 +1,4 @@
-# LCR-Rot-hop-ont++
+# LCR-Rot-hop-Kfont++
 
 Source code for Injecting Knowledge from a Domain Sentiment Ontology in a Neural Approach for Aspect-Based Sentiment
 Classification.
@@ -34,8 +34,8 @@ the year of the dataset.
   by the other programs. To generate all embeddings for a given year, run `python main_preprocess.py --all`
 - `main_hyperparam.py`: run hyperparameter optimization
 - `main_train.py`: train the model for a given set of hyperparameters
-- `main_validate.py`: validate a trained model. To do an ablation experiment, run `python main_validate.py --ablation`,
-  this requires all embeddings to be created for a given year.
+- `main_validate.py`: validate a trained model.
+  python main_validate.py --model "Model path"
 
 ## Acknowledgements
 
@@ -43,7 +43,7 @@ Code and ideas are used from:
 - https://github.com/wesselvanree/LCR-Rot-hop-ont-plus-plus.git
 - https://github.com/StijnCoremans/LCR-Rot-hop-ont.git
 - https://github.com/Bjarten/early-stopping-pytorch/blob/master/pytorchtools.py
-- Tru ̧scˇa, M. M., Wassenberg, D., Frasincar, F., and Dekker, R. (2020). A hybrid approach
+- Trusca, M. M., Wassenberg, D., Frasincar, F., and Dekker, R. (2020). A hybrid approach
   for aspect-based sentiment analysis using deep contextual word embeddings and hierarchical
   attention. In 20th Conference on Web Engineering (ICWE 2020), volume 12128 of LNCS, pages 365–380. Springer.
 - Yao, Y., Huang, S., Dong, L., Wei, F., Chen, H., and Zhang, N. (2022). Kformer: Knowledge
