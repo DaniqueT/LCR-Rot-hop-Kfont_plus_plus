@@ -1,7 +1,6 @@
 # LCR-Rot-hop-Kfont++
 
-Source code for Injecting Knowledge from a Domain Sentiment Ontology in a Neural Approach for Aspect-Based Sentiment
-Classification.
+Source code for injecting knowledge from a domain-specific ontology into LCR-Rot-hop++ inspired by work on Kformer for Aspect-Based Sentiment Classification. 
 
 ## Setup
 - Create environment
@@ -10,36 +9,16 @@ Classification.
  
 - Download data
   - Download the following files
-        - Train and test data from [SemEval 2015](http://alt.qcri.org/semeval2015/task12/index.php?id=data-and-tools)
-        - Train and test data from [SemEval 2016](http://alt.qcri.org/semeval2016/task5/index.php?id=data-and-tools)
-        - Restaurant [ontology](https://github.com/KSchouten/Heracles/tree/master/src/main/resources/externalData)
-    - Add the files to 'data/raw' and rename them to the following:
-          - `ABSA15_Restaurants_Test.xml`
-          - `ABSA15_Restaurants_Train.xml`
-          - `ABSA16_Restaurants_Test.xml`
-          - `ABSA16_Restaurants_Train.xml`
-          - `ontology.owl'
-
-
-### Data
-
-First, create a `data/raw` directory and download
-the [SemEval 2015](http://alt.qcri.org/semeval2015/task12/index.php?id=data-and-tools), [SemEval 2016](http://alt.qcri.org/semeval2016/task5/index.php?id=data-and-tools)
-datasets, and the [ontology](https://github.com/KSchouten/Heracles/tree/master/src/main/resources/externalData). Then
-rename the SemEval datasets to end up with the following files:
-
-- `data/raw`
+    - Train and test data from [SemEval 2015](http://alt.qcri.org/semeval2015/task12/index.php?id=data-and-tools)
+    - Train and test data from [SemEval 2016](http://alt.qcri.org/semeval2016/task5/index.php?id=data-and-tools)
+    - Restaurant [ontology](https://github.com/KSchouten/Heracles/tree/master/src/main/resources/externalData)
+  - Add the files to 'data/raw' and rename them to the following:
     - `ABSA15_Restaurants_Test.xml`
     - `ABSA15_Restaurants_Train.xml`
     - `ABSA16_Restaurants_Test.xml`
     - `ABSA16_Restaurants_Train.xml`
-    - `ontology.owl-Extended.owl`
+    - `ontology.owl'
 
-### Setup environment
-
-Create a conda environment with Python version 3.10, the required packages and their versions are listed
-in `requirements.txt`, note that you may need to install some packages using `conda install` instead of `pip install`
-depending on your platform.
 
 ## Usage
 
