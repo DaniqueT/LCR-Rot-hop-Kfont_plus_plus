@@ -39,8 +39,14 @@ the year of the dataset.
 
 ## Acknowledgements
 
-The `model.bert_encoder` module uses code from:
+Code and ideas are used from:
+- https://github.com/wesselvanree/LCR-Rot-hop-ont-plus-plus.git
+- https://github.com/StijnCoremans/LCR-Rot-hop-ont.git
+- https://github.com/Bjarten/early-stopping-pytorch/blob/master/pytorchtools.py
+- Tru ̧scˇa, M. M., Wassenberg, D., Frasincar, F., and Dekker, R. (2020). A hybrid approach
+  for aspect-based sentiment analysis using deep contextual word embeddings and hierarchical
+  attention. In 20th Conference on Web Engineering (ICWE 2020), volume 12128 of LNCS, pages 365–380. Springer.
+-Yao, Y., Huang, S., Dong, L., Wei, F., Chen, H., and Zhang, N. (2022). Kformer: Knowledge
+  Injection in Transformer Feed-Forward Layers. In 11th International Conference on Natural
+  Language Processing and Chinese Computing (NLPCC 2022), volume 13551, pages 131–143. Springer.
 
-- Liu, W., Zhou, P., Zhao, Z., Wang, Z., Ju, Q., Deng, H., Wang, P.: K-BERT: Enabling language representation with
-  knowledge graph. In: 34th AAAI Conference on Artificial Intelligence. vol. 34, pp. 2901–2908. AAAI Press (2020)
-- https://github.com/Felix0161/KnowledgeEnhancedABSA 
