@@ -46,7 +46,7 @@ Code and ideas are used from:
 - Tru ̧scˇa, M. M., Wassenberg, D., Frasincar, F., and Dekker, R. (2020). A hybrid approach
   for aspect-based sentiment analysis using deep contextual word embeddings and hierarchical
   attention. In 20th Conference on Web Engineering (ICWE 2020), volume 12128 of LNCS, pages 365–380. Springer.
--Yao, Y., Huang, S., Dong, L., Wei, F., Chen, H., and Zhang, N. (2022). Kformer: Knowledge
+- Yao, Y., Huang, S., Dong, L., Wei, F., Chen, H., and Zhang, N. (2022). Kformer: Knowledge
   Injection in Transformer Feed-Forward Layers. In 11th International Conference on Natural
   Language Processing and Chinese Computing (NLPCC 2022), volume 13551, pages 131–143. Springer.
 
