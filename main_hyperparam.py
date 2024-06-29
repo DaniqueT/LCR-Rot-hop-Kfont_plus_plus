@@ -105,7 +105,7 @@ class HyperOptManager:
                 if i == 0 and epoch == 0:
                     knowledge_layers = range(-2,-1)
                 else:
-                    knowledge_layers = range(0,3)
+                    knowledge_layers = range(9,12)
 
                 batch_outputs = torch.stack(
                     [model(sentence, target_index_start, target_index_end, knowledge_layers) for (sentence, target_index_start, target_index_end), _, hops in batch], dim=0)
