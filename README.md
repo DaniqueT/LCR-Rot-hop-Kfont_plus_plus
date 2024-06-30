@@ -5,7 +5,7 @@ Source code for injecting knowledge from a domain-specific ontology into LCR-Rot
 ## Setup
 - Create environment
    - Create a conda environment in Python 3.10
-   - Install the required packages by running pip install -r requirements.txt in the terminal
+   - Install the required packages by running `pip install -r requirements.txt` in the terminal
 
  
 - Download data
