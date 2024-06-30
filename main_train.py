@@ -85,6 +85,7 @@ def main():
             for i, batch in enumerate(epoch_progress):
                 torch.set_default_device(device)
 
+                # Indicate in which layer the knowledge should be added
                 if i == 0 and epoch == 0:
                     knowledge_layers = range(-2,-1)
                 else:
