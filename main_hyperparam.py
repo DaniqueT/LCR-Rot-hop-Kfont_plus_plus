@@ -51,7 +51,6 @@ class HyperOptManager:
             print("Starting from scratch")
 
     def run(self):
-        # TODO: convert to dict for better readability in json file?
         space = [
             hp.choice('learning_rate', [0.02, 0.05, 0.06, 0.07, 0.08, 0.09, 0.01, 0.1]),
             hp.quniform('dropout_rate', 0.25, 0.75, 0.1),
