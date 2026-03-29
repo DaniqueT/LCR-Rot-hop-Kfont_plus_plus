@@ -49,7 +49,6 @@ Code and ideas are used from:
   Injection in Transformer Feed-Forward Layers. In 11th International Conference on Natural
   Language Processing and Chinese Computing (NLPCC 2022), volume 13551, pages 131–143. Springer.
 - Visser C, Frasincar F (2025) Knowledge Injection from a Domain Sentiment 
-  Ontology in an Attention Neural Network for Aspect-Based Sentiment Classifi-
-  cation. In: 25th International Conference Web Information Systems Engineering
+  Ontology in an Attention Neural Network for Aspect-Based Sentiment Classification. In: 25th International Conference Web Information Systems Engineering
   (WISE 2024), Lecture Notes in Computer Science, vol 15436. Springer, pp 74–88
 
