@@ -61,11 +61,10 @@ def main():
     lcr_hops: int = args.hops
 
     dropout_rate = 0.5
-    learning_rate = 0.02
-    momentum = 0.9
-    weight_decay = 0.025
-    n_epochs = 40
+    learning_rate = 1e-4
+    weight_decay = 5e-4
     batch_size = 32
+    n_epochs = 40
 
     patience = 10
 
@@ -111,13 +110,13 @@ def main():
     ).to(device)
 
     criterion = nn.CrossEntropyLoss()
-    optimizer = optim.SGD(
+    
+    optimizer = torch.optim.Adam(
          model.parameters(),
          lr=learning_rate,
-         momentum=momentum,
          weight_decay=weight_decay
      )
-
+    
     best_accuracy: Optional[float] = None
     best_state_dict: Optional[dict] = None
 
