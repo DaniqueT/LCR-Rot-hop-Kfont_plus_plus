@@ -56,7 +56,6 @@ class HyperOptManager:
         space = [
             hp.choice('learning_rate', [0.02, 0.01, 0.005, 0.001]),
             hp.quniform('dropout_rate', 0.3, 0.6, 0.1),
-            hp.choice('momentum', [0.85, 0.9, 0.95, 0.99]),
             hp.choice('weight_decay', [0.0001, 0.001, 0.01]),
             hp.choice('lcr_hops', [3])
         ]
@@ -89,7 +88,7 @@ class HyperOptManager:
         # Train model
         model = LCRRotHopPlusPlus(hops=lcr_hops, dropout_prob=dropout_rate, ontology=ontology, word2vec=word2vec_model).to(self.device)
         criterion = nn.CrossEntropyLoss()
-        optimizer = optim.SGD(model.parameters(), lr=learning_rate, momentum=momentum, weight_decay=weight_decay)
+        optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate, weight_decay=weight_decay)
 
         best_accuracy: Optional[float] = None
         best_state_dict: Optional[tuple[dict, dict]] = None
